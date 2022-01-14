@@ -12,6 +12,7 @@ function RegisterPage() {
     email: '',
     tel: 0,
     cep: 0,
+    sexo: '',
   });
   const dispatch = useDispatch();
   const history = useHistory();
@@ -26,6 +27,7 @@ function RegisterPage() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(setRegisterClient(registerData));
+    history.push('/clientesCadastrados');
   }
 
   return (
@@ -46,6 +48,22 @@ function RegisterPage() {
           label="Idade:"
           placeholder="Digite sua idade"
           value={registerData.idade}
+          onChange={handleChange}
+        />
+        <Input
+          name="sexo"
+          type="radio"
+          label="Feminino"
+          placeholder="Digite sua idade"
+          value="feminino"
+          onChange={handleChange}
+        />
+        <Input
+          name="sexo"
+          type="radio"
+          label="Masculino"
+          placeholder="Digite sua idade"
+          value="masculino"
           onChange={handleChange}
         />
         <Input
