@@ -2,8 +2,8 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 function HomePage() {
+  const history = useHistory();
   function handleClick() {
-    const history = useHistory();
     history.push('/login');
   }
 

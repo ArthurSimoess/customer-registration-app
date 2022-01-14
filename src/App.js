@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Routes from './Routes';
 
 function App() {
   return (
     <div>
-      <h1>Olá</h1>
+      <Routes />
     </div>
   );
 }
