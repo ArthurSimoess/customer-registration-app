@@ -1,11 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import femaleProfile from '../images/femaleProfile.svg';
 import maleProfile from '../images/maleProfile.svg';
+import { setDeleteClient } from '../redux/action';
 
 function CardClients() {
   const registerClients = useSelector((state) => state.registerReducer);
   const { clients } = registerClients;
+  const dispatch = useDispatch();
 
   function profilePic(sexo) {
     if (sexo === 'masculino') {
@@ -13,11 +15,20 @@ function CardClients() {
     }
     return <img src={femaleProfile} alt="femaleProfile" width="150px" />;
   }
+
+  function handleClick({ target: { name } }) {
+    const filterClients = clients.filter((client) => (
+      Number(client.id) !== Number(name)
+    ));
+    console.log(filterClients);
+    dispatch(setDeleteClient(filterClients));
+  }
+
   return (
     <div>
       {
         clients.map(({
-          nome, idade, email, tel, cep, sexo,
+          id, nome, idade, email, tel, cep, sexo,
         }) => (
           <div>
             {profilePic(sexo)}
@@ -27,6 +38,7 @@ function CardClients() {
             <p>{tel}</p>
             <p>{cep}</p>
             <p>{sexo}</p>
+            <button type="button" name={id} onClick={handleClick}>Remover Cliente</button>
           </div>
         ))
       }

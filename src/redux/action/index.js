@@ -1,5 +1,6 @@
 export const SET_LOGIN_VALUE = 'SET_LOGIN_VALUE';
 export const SET_REGISTER_CLIENT = 'SET_REGISTER_CLIENT';
+export const SET_DELETE_CLIENT = 'SET_DELETE_CLIENT';
 
 // payload é o local na minha action, onde as informações atualizada vão ficar
 // O nome payload em si é uma convenção.
@@ -10,4 +11,8 @@ export const setLoginValue = (payload) => ({
 
 export const setRegisterClient = (payload) => ({
   type: SET_REGISTER_CLIENT, payload,
+});
+
+export const setDeleteClient = (payload) => ({
+  type: SET_DELETE_CLIENT, payload,
 });
