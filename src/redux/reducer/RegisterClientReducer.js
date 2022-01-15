@@ -15,7 +15,6 @@ const registerReducer = (state = initialState, action) => {
         ],
       });
     case (SET_DELETE_CLIENT):
-      console.log(action.payload);
       return ({
         clients: [...action.payload],
       });

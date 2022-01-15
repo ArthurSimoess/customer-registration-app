@@ -11,8 +11,6 @@ function RegisterPage() {
     nome: '',
     idade: 0,
     email: '',
-    tel: 0,
-    cep: 0,
     sexo: '',
   });
   const dispatch = useDispatch();
@@ -86,22 +84,6 @@ function RegisterPage() {
           type="email"
           placeholder="Digite seu email"
           value={registerData.email}
-          onChange={handleChange}
-        />
-        <Input
-          name="tel"
-          label="Telefone:"
-          type="number"
-          placeholder="Digite um número de contato"
-          value={registerData.tel}
-          onChange={handleChange}
-        />
-        <Input
-          name="cep"
-          label="CEP:"
-          type="number"
-          placeholder="Digite seu cep"
-          value={registerData.cep}
           onChange={handleChange}
         />
         <button type="submit" className="bg-black p-2 text-white rounded-lg">
