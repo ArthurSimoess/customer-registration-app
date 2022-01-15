@@ -46,7 +46,7 @@ function LoginPage() {
   return (
     <div className="bg-gray-200 h-screen flex flex-col items-center justify-center">
       <header className="fixed top-0 bg-black text-white p-4 w-full text-center">
-        <p>Cadastro de clientes</p>
+        <p className="font-bold text-2xl">Cadastro de clientes</p>
       </header>
       <img src={blackData} alt="searchInformation" className="w-64" />
       <div className="bg-white rounded-lg py-16 px-5">

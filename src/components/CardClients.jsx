@@ -40,7 +40,6 @@ function CardClients() {
         return 0;
       });
     }
-    console.log(clients);
     return clients;
   }
 
@@ -48,8 +47,8 @@ function CardClients() {
     <div className="flex flex-col items-center justify-center">
       <button
         type="button"
-        className="mb-5"
         onClick={handleOrder}
+        className="bg-indigo-400 p-2 text-black rounded-lg mb-5 border-2 border-black mt-10"
       >
         Ordernar Clientes
       </button>

@@ -35,7 +35,7 @@ function RegisterClients() {
         email={user.email}
       />
       { clients.length === 0 ? (
-        <div className="bg-slate-300 h-2/6 flex flex-col items-center justify-center gap-10 mt-36">
+        <div className="bg-slate-300 h-2/6 w-10/12 mx-auto flex flex-col items-center justify-center gap-10 mt-36 p-6">
           <h2>Não há clientes registrados</h2>
           <button
             type="button"
