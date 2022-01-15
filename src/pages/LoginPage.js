@@ -6,7 +6,6 @@ import { setLoginValue } from '../redux/action/index';
 import { setLoginStorage } from '../services/localstorage';
 import blackData from '../images/blackData.svg';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 
 function LoginPage() {
   const [loginInfos, setLoginInfos] = useState({
@@ -46,7 +45,9 @@ function LoginPage() {
 
   return (
     <div className="bg-gray-200 h-screen flex flex-col items-center justify-center">
-      <Header />
+      <header className="fixed top-0 bg-black text-white p-4 w-full text-center">
+        <p>Cadastro de clientes</p>
+      </header>
       <img src={blackData} alt="searchInformation" className="w-64" />
       <div className="bg-white rounded-lg py-16 px-5">
         <form
@@ -62,6 +63,7 @@ function LoginPage() {
               onChange={handleChangeInputs}
               placeholder="Digite seu email"
               className="p-2 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 bg-gray-100 rounded-sm"
+              autoComplete="off"
             />
           </label>
           <label htmlFor="password" className="flex flex-col gap-2">
@@ -73,6 +75,7 @@ function LoginPage() {
               onChange={handleChangeInputs}
               placeholder="Digite seu nome"
               className="p-2 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 bg-gray-100 rounded-sm"
+              autoComplete="off"
             />
           </label>
           <button

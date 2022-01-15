@@ -14,6 +14,8 @@ function Input({
         onChange={onChange}
         placeholder={placeholder}
         value={value}
+        className="p-2 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 bg-gray-100 rounded-sm"
+        required
       />
     </label>
   );

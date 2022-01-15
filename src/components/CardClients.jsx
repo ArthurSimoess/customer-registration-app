@@ -24,12 +24,12 @@ function CardClients() {
   }
 
   return (
-    <div>
+    <div className="sm:flex sm:flex-wrap sm:gap-10">
       {
         clients.map(({
           id, nome, idade, email, tel, cep, sexo,
         }) => (
-          <div>
+          <div className="flex flex-col items-center border-2 border-black p-4 gap-2 mb-10">
             {profilePic(sexo)}
             <p>{nome}</p>
             <p>{idade}</p>
@@ -37,7 +37,14 @@ function CardClients() {
             <p>{tel}</p>
             <p>{cep}</p>
             <p>{sexo}</p>
-            <button type="button" name={id} onClick={handleClick}>Remover Cliente</button>
+            <button
+              type="button"
+              name={id}
+              onClick={handleClick}
+              className="bg-black p-2 text-white rounded-lg"
+            >
+              Remover Cliente
+            </button>
           </div>
         ))
       }

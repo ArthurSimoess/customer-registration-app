@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Footer from '../components/Footer';
 import Input from '../components/Input';
 import { setRegisterClient } from '../redux/action';
 
@@ -36,8 +37,17 @@ function RegisterPage() {
 
   return (
     <div>
-      <h1>Página de registro</h1>
-      <form onSubmit={handleSubmit}>
+      <header className="top-0 bg-black text-white p-4 w-full flex items-center justify-between">
+        <p className="text-lg font-bold">Página de Registro</p>
+        <button
+          type="button"
+          onClick={handleClick}
+          className="bg-gray-200 w-16 text-black p-1 rounded"
+        >
+          voltar
+        </button>
+      </header>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center mt-10">
         <Input
           name="nome"
           type="text"
@@ -94,13 +104,11 @@ function RegisterPage() {
           value={registerData.cep}
           onChange={handleChange}
         />
-        <button type="submit">
+        <button type="submit" className="bg-black p-2 text-white rounded-lg">
           Cadastrar
         </button>
       </form>
-      <button type="button" onClick={handleClick}>
-        voltar
-      </button>
+      <Footer />
     </div>
   );
 }
