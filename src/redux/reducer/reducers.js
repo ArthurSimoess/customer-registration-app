@@ -4,7 +4,7 @@ import { SET_LOGIN_VALUE } from '../action/index';
 const initialState = {
   loginInfos: {
     email: '',
-    password: '',
+    name: '',
   },
 };
 

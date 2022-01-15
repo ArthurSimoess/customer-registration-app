@@ -24,6 +24,10 @@ function RegisterPage() {
     });
   }
 
+  function handleClick() {
+    history.push('/clientesCadastrados');
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(setRegisterClient(registerData));
@@ -94,6 +98,9 @@ function RegisterPage() {
           Cadastrar
         </button>
       </form>
+      <button type="button" onClick={handleClick}>
+        voltar
+      </button>
     </div>
   );
 }

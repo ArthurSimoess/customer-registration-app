@@ -20,7 +20,6 @@ function CardClients() {
     const filterClients = clients.filter((client) => (
       Number(client.id) !== Number(name)
     ));
-    console.log(filterClients);
     dispatch(setDeleteClient(filterClients));
   }
 
