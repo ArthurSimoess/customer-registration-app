@@ -13,12 +13,12 @@
 
 ## Requisitos do exercício
 
-- [x] Criar página de login;
-- [x] Verificar se o login foi realizado;
-- [x] Criar lista de clientes e botão de cadastro de clientes;
-- [x] Criar página de cadastro de clientes;
-- [x] Implementar um botão que filtre os clientes em ordem alfabética a partir do campo nome;
-- [x] Implementar um botão que remove o cadastro do cliente.
+- :heavy_check_mark: Criar página de login;
+- :heavy_check_mark: Verificar se o login foi realizado;
+- :heavy_check_mark: Criar lista de clientes e botão de cadastro de clientes;
+- :heavy_check_mark: Criar página de cadastro de clientes;
+- :heavy_check_mark: Implementar um botão que filtre os clientes em ordem alfabética a partir do campo nome;
+- :heavy_check_mark: Implementar um botão que remove o cadastro do cliente.
 
 
 
