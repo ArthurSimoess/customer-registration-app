@@ -1,6 +1,15 @@
 # Cadastro de Clientes
 
   Exercício bônus proposto pela trybe em que o aluno é responsável por criar um sistema de cadastro de clientes.
+ 
+# Deploy
+
+  [Clique aqui para acessar a aplicação](https://main.daeijacgfekzp.amplifyapp.com/)
+  
+## Habilidades Desenvolvidas
+
+- Utilização do react redux juntamente coms as hooks useDispatch e useSelector para gerenciamento do estado global
+- Mobile First
 
 ## Requisitos do exercício
 
