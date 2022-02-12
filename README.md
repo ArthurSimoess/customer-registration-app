@@ -8,7 +8,7 @@
   
 ## Habilidades Desenvolvidas
 
-- Utilização do react redux juntamente coms as hooks useDispatch e useSelector para gerenciamento do estado global
+- Utilização do react redux juntamente com as hooks useDispatch e useSelector para gerenciamento do estado global
 - Mobile First
 
 ## Requisitos do exercício
