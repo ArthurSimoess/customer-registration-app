@@ -28,14 +28,14 @@ function RegisterClients() {
 
   if (!user.email && !user.name) return (<h1>Faça o login antes de continuar</h1>);
   return (
-    <div className="bg-gray-100 sm:h-screen">
+    <div className="bg-gray-100 h-screen overflow-auto flex flex-col justify-between">
       <Header
         text="Clientes Cadastrados"
         name={user.name}
         email={user.email}
       />
       { clients.length === 0 ? (
-        <div className="bg-slate-300 h-2/6 w-10/12 mx-auto flex flex-col items-center justify-center gap-10 mt-36 p-6">
+        <div className="bg-slate-300 h-2/6 w-10/12 mx-auto flex flex-col items-center justify-center gap-10 p-6">
           <h2>Não há clientes registrados</h2>
           <button
             type="button"
@@ -46,13 +46,13 @@ function RegisterClients() {
           </button>
         </div>
       ) : (
-        <div className="flex flex-col items-center mt-10 mb-10">
+        <div className="flex flex-col items-center mt-10 mb-4">
           <button
             type="button"
             onClick={handleClickBtn}
             className="p-2 bg-black text-white rounded mb-6"
           >
-            Registrar um ciente
+            Registrar um cliente
           </button>
           <CardClients />
         </div>

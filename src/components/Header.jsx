@@ -8,10 +8,11 @@ function Header({ text, name }) {
   function handleFinish() {
     localStorage.removeItem('userData');
     history.push('/');
+    window.location.reload(true);
   }
 
   return (
-    <header className="top-0 bg-black text-white p-4 w-full flex flex-col items-center gap-3 sm:flex-row sm:justify-around">
+    <header className="bg-black text-white p-4 w-full flex flex-col items-center gap-3 sm:flex-row sm:justify-around">
       <div className="sm:order-2">
         <p className="font-bold text-lg md:text-2xl">{text}</p>
       </div>

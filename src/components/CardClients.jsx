@@ -48,7 +48,7 @@ function CardClients() {
       <button
         type="button"
         onClick={handleOrder}
-        className="bg-indigo-400 p-2 text-black rounded-lg mb-5 border-2 border-black mt-10"
+        className="bg-indigo-400 p-2 text-black rounded-lg mb-5 border-2 border-black mt-4"
       >
         Ordernar Clientes
       </button>

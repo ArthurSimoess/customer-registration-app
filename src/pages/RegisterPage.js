@@ -34,8 +34,8 @@ function RegisterPage() {
   }
 
   return (
-    <div>
-      <header className="top-0 bg-black text-white p-4 w-full flex items-center justify-between">
+    <div className="flex flex-col h-screen overflow-auto justify-between">
+      <header className="bg-black text-white p-4 w-full flex items-center justify-between">
         <p className="text-lg font-bold">Página de Registro</p>
         <button
           type="button"
@@ -45,7 +45,7 @@ function RegisterPage() {
           voltar
         </button>
       </header>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center mt-10">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center justify-center">
         <Input
           name="nome"
           type="text"
@@ -62,22 +62,24 @@ function RegisterPage() {
           value={registerData.idade}
           onChange={handleChange}
         />
-        <Input
-          name="sexo"
-          type="radio"
-          label="Feminino"
-          placeholder="Digite sua idade"
-          value="feminino"
-          onChange={handleChange}
-        />
-        <Input
-          name="sexo"
-          type="radio"
-          label="Masculino"
-          placeholder="Digite sua idade"
-          value="masculino"
-          onChange={handleChange}
-        />
+        <div className="flex gap-2">
+          <Input
+            name="sexo"
+            type="radio"
+            label="Feminino"
+            placeholder="Digite sua idade"
+            value="feminino"
+            onChange={handleChange}
+          />
+          <Input
+            name="sexo"
+            type="radio"
+            label="Masculino"
+            placeholder="Digite sua idade"
+            value="masculino"
+            onChange={handleChange}
+          />
+        </div>
         <Input
           name="email"
           label="Email:"
