@@ -6,6 +6,18 @@
 
   [Clique aqui para acessar a aplicação](https://main.daeijacgfekzp.amplifyapp.com/)
   
+## Para acessar o código do Projeto:
+
+1.Clone o repositório
+
+* `git clone git@github.com:ArthurSimoess/super-trunfo-project.git`
+* Entre na pasta do repositório que você acabou de clonar:
+
+2.Instale as dependências e inicialize o projeto
+
+* `npm install`
+* `npm start`
+  
 ## Habilidades Desenvolvidas
 
 - Utilização do react redux juntamente com as hooks useDispatch e useSelector para gerenciamento do estado global
